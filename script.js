@@ -2,14 +2,28 @@
 let suma = false, resta = false, multiplicacion = false, division = false
 
 
+//pre array q va a armar el numero para luego calcularlo
+let preArray =[]
 //array donde se van a guardar los numeros para el calculo
 let array = []
 
 
+//botones
+document.getElementById('cero').onclick = function () {
+  let valorTecla = 0
+  preArray.push(parseInt(valorTecla))
+  console.log(preArray)
+}
+document.getElementById('uno').onclick = function () {
+  let valorTecla = 1
+  preArray.push(parseInt(valorTecla))
+  console.log(preArray)
+}
+
+
+
 //los botones van a agregar los numeros al array para las operaciones y van a cambiar a true la operacion que se quiera realzar
 document.getElementById('suma').onclick = function (){
-  let numeroSuma = document.getElementById('ingresoNum').value;
-  array.push(parseInt(numeroSuma))
   suma = true
 }
 document.getElementById('resta').onclick = function () {
@@ -29,11 +43,10 @@ document.getElementById('division').onclick = function () {
 }
 
 
-//chequeamos 
+//chequeamos cual es la opcion seleccionada
 document.getElementById('igual').onclick = function(){
-  let numeroSegundo = document.getElementById('ingresoNum').value
+  let numeroSegundo = preArray.join('')
   array.push(parseInt(numeroSegundo))
-
   if(suma == true){
     array.reduce((primero, segundo) => {
       console.log(primero + segundo)
