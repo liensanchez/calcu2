@@ -1,0 +1,162 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px){
+  body{
+    background-color: #663399;
+  }
+  .bodyCalculadora{
+    display: flex;
+    justify-content: center;
+
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "subVisor subVisor subVisor subVisor subVisor"
+      "visor visor visor visor visor"
+      "siete ocho nueve borrar mas"
+      "cuatro cinco seis limpiar menos"
+      "uno dos tres igual por"
+      "cero double-cero punto igual dividido";
+    width: 300px;
+    height: 300px;
+  }
+  
+  .subVisor { grid-area: subVisor; }
+  
+  .visor { grid-area: visor; }
+  
+  .cero { grid-area: cero; }
+  
+  .double-cero { grid-area: double-cero; }
+  
+  .punto { grid-area: punto; }
+  
+  .uno { grid-area: uno; }
+  
+  .dos { grid-area: dos; }
+  
+  .tres { grid-area: tres; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .limpiar { grid-area: limpiar; }
+  
+  .borrar { grid-area: borrar; }
+  
+  .igual { grid-area: igual; }
+  
+  .mas { grid-area: mas; }
+  
+  .menos { grid-area: menos; }
+  
+  .por { grid-area: por; }
+  
+  .dividido { grid-area: dividido; }
+  input{
+    width: 296px;
+    height: 100%;
+  }
+  button{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  body{
+    background-color: aqua;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .bodyCalculadora{
+    display: flex;
+    justify-content: center;
+
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "subVisor subVisor subVisor subVisor subVisor"
+      "visor visor visor visor visor"
+      "siete ocho nueve borrar mas"
+      "cuatro cinco seis limpiar menos"
+      "uno dos tres igual por"
+      "cero double-cero punto igual dividido";
+    width: 700px;
+    height: 700px;
+  }
+  
+  .subVisor { grid-area: subVisor; }
+  
+  .visor { grid-area: visor; }
+  
+  .cero { grid-area: cero; }
+  
+  .double-cero { grid-area: double-cero; }
+  
+  .punto { grid-area: punto; }
+  
+  .uno { grid-area: uno; }
+  
+  .dos { grid-area: dos; }
+  
+  .tres { grid-area: tres; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .limpiar { grid-area: limpiar; }
+  
+  .borrar { grid-area: borrar; }
+  
+  .igual { grid-area: igual; }
+  
+  .mas { grid-area: mas; }
+  
+  .menos { grid-area: menos; }
+  
+  .por { grid-area: por; }
+  
+  .dividido { grid-area: dividido; }
+  input{
+    width: 696px;
+    height: 100%;
+  }
+  button{
+    width: 100%;
+    height: 100%;
+  }
+}
