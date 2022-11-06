@@ -7,86 +7,55 @@ let preArray =[]
 //array donde se van a guardar los numeros para el calculo
 let array = []
 
-//botones numericos, c/u tiene su valor que se agrega a preArray para luego unirlos con join asi 2, 9, 0 → 290
+
+//funcion para el numero que agrega el valor de tecla en c/u de las teclas, tiene su valor que se agrega a preArray para luego unirlos con join asi 2, 9, 0 → 290
+function numeroIngresado (valorTecla) {
+  preArray.push(parseInt(valorTecla))
+  let myVisor = document.getElementById('subVisor')
+  let newNumero = document.createElement('p')
+  newNumero.innerHTML = valorTecla;
+  myVisor.appendChild(newNumero)
+}
+
+//botones numericos que pasan el parametro a la funcion de arriba 
 document.getElementById('cero').onclick = function () {
-  let valorTecla = 0
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado(0)
 }
+
 document.getElementById('uno').onclick = function () {
-  let valorTecla = 1
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (1)
 }
+
 document.getElementById('dos').onclick = function () {
-  let valorTecla = 2
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (2)
 }
+
 document.getElementById('tres').onclick = function () {
-  let valorTecla = 3
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (3)
 }
+
 document.getElementById('cuatro').onclick = function () {
-  let valorTecla = 4
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (4)
 }
+
 document.getElementById('cinco').onclick = function () {
-  let valorTecla = 5
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (5)
 }
+
 document.getElementById('seis').onclick = function () {
-  let valorTecla = 6
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (6)
 }
+
 document.getElementById('siete').onclick = function () {
-  let valorTecla = 7
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (7)
 }
+
 document.getElementById('ocho').onclick = function () {
-  let valorTecla = 8
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (8)
 }
+
 document.getElementById('nueve').onclick = function () {
-  let valorTecla = 9
-  preArray.push(parseInt(valorTecla))
-  let myVisor = document.getElementById('subVisor')
-  let newNumero = document.createElement('p')
-  newNumero.innerHTML = valorTecla;
-  myVisor.appendChild(newNumero)
+  numeroIngresado (9)
 }
 
 
