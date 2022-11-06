@@ -105,15 +105,13 @@ document.getElementById('division').onclick = function () {
   myVisor.appendChild(newNumero)
 }
 
-//los botones de operacion son los encargados de mostrar el numero a operar 
-
 
 //chequeamos cual es la opcion seleccionada
 document.getElementById('igual').onclick = function(){
   let numeroSegundo = preArray.join('')
   array.push(parseInt(numeroSegundo))
   preArray=[]
-  let resultado = 'a'
+
   if(suma == true){
     array.reduce((primero, segundo) => {
       resultado = (primero + segundo)
@@ -141,4 +139,8 @@ document.getElementById('igual').onclick = function(){
   let newNumero = document.createElement('h3')
   newNumero.innerHTML = resultado;
   myVisor.appendChild(newNumero)
+
+  //eliminamos el numero ingresado
+  let visor = document.getElementById('subVisor')
+  parentNode.removeChild(visor)
 }
